@@ -1,9 +1,8 @@
-# pythonSdk for UCloud UGC
+# Sdk for UCloud UGC
 
-
-## Dependencies:
-- requests
-
+##Avaliable sdks
+- python sdk
+- cpp sdk
 
 [产品文档][1]
 

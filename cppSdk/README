@@ -1,0 +1,4 @@
+1: 修改  ugc_api_exmple.cpp  中 PUBLIC_KEY 和 PRIVATE_KEY 改成自己的key
+2: sh build.sh
+3: 运行二进制文件 可看到输出结果
+4: 使用前请安装libcurl

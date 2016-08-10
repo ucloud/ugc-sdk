@@ -10,6 +10,9 @@ using namespace rapidjson;
 
 static string ACCESS_TOKEN;
 
+
+//public_key  和 pirvate key 需要修改成自己的key
+
 static string PUBLIC_KEY =  "";
 static string PRIVATE_KEY = "";
 

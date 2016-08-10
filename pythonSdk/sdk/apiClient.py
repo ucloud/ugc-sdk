@@ -11,6 +11,7 @@ _sys_info = '{0}; {1}'.format(platform.system(), platform.machine())
 _python_ver = platform.python_version()
 USER_AGENT = 'UGCSDK_Python/{0} ({1}; ) Python/{2}'.format(__version__, _sys_info, _python_ver)
 _headers = {'User-Agent': USER_AGENT}
+session=requests.session()
 
 
 SENDREQFIAL=-1
@@ -41,7 +42,7 @@ def _post(url, params, data, Content_Type=None):
         print("post :" + url)
 
         if Content_Type : _headers["Content-Type"] = Content_Type
-        r = requests.post(url, data=data, headers=_headers, timeout=30)
+        r = session.post(url, data=data, headers=_headers, timeout=30)
     except Exception as e:
         return {"RetCode" : SENDREQFIAL, "Message" : "Exception : " + str(e)}
     return __res_wrapper(r)
@@ -51,7 +52,7 @@ def _get(url, params):
     try:
         url = __makeUrlWithCommonParam(url, params)
         print("get :" + url)
-        r = requests.get(url, timeout=30)
+        r = session.get(url, timeout=30)
     except Exception as e:
         return {"RetCode" : SENDREQFIAL, "Message" : "Exception : " + str(e)}
     return __res_wrapper(r)

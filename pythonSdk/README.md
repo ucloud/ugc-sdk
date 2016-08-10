@@ -1,6 +1,5 @@
 # pythonSdk for UCloud UGC
 
-
 ## Dependencies:
 - requests
 

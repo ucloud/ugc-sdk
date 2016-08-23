@@ -3,6 +3,7 @@
 ##Avaliable sdks:
 - python sdk
 - cpp sdk
+- java sdk
 
 ## Documents:
 [产品文档][1]

@@ -1,0 +1,7 @@
+java sdk 是对
+https://docs.ucloud.cn/api-docs-az/ugc-api/index.html
+中接口的封装，返回值的含义详解见此链接中各接口的返回值说明
+
+在Test.java中的  修改PUBLIC_KEY  和 PRIVATE_KEY  后
+
+sh  buildandrun.sh  可以看到接口各个接口的用例输出

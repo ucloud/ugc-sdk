@@ -4,6 +4,7 @@
 - python sdk
 - cpp sdk
 - java sdk
+- golang sdk
 
 ## Documents:
 [产品文档][1]

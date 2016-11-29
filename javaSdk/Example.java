@@ -84,6 +84,7 @@ public class Example{
 		il.region = "cn-bj2";
 		il.public_key = PUBLIC_KEY;
 		il.private_key = PRIVATE_KEY;
+		il.date = "2016-11-11";
 		try {
 			String result = il.GetTaskList();
 			System.out.println(result);

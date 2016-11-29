@@ -98,7 +98,7 @@ def CreateDockerImageBucket(BucketName, Region=REGION):
 	return response
 
 
-def GetTaskList(Region=REGION, Limit=20, Offset=0, TaskId=None, TaskName=None, TaskType= None, State = "None", OrderBy=None):
+def GetTaskList(Region=REGION, Limit=20, Offset=0, TaskId=None, TaskName=None, TaskType= None, State = "None", OrderBy=None, Date=None):
 	"""
 	Args:
 		Region String 地域名, 参见地域列表
@@ -109,6 +109,7 @@ def GetTaskList(Region=REGION, Limit=20, Offset=0, TaskId=None, TaskName=None, T
 		OrderBy String Default: 默认排序
 		Limit Integer 默认为 0 
 		Offset Integer 默认为 20 
+		Date 日期 格式:2016-11-11
 
 	Returns:
 		一个 dict 变量 
@@ -125,6 +126,7 @@ def GetTaskList(Region=REGION, Limit=20, Offset=0, TaskId=None, TaskName=None, T
 	if TaskName is not None : parameters["TaskName"] = TaskName
 	if TaskType is not None : parameters["TaskType"] = TaskType
 	if State is not None : parameters["State"] = State
+	if Date is not None: parameters["Date"] = Date
 	response   = apiClient._get(COMMON_API_URL, parameters);
 	return response
 

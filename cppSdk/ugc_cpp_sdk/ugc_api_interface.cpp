@@ -152,6 +152,7 @@ int get_task_list(get_task_list_request &request
 
 	string signature = vefsig(request.private_key,  param_map);
 	param_map["Signature"] = signature;
+	param_map["Date"] = request.date;
 	string url = generate_request_url(COMMON_API_URL, param_map);
 
 	int ret = http_get(url,result);

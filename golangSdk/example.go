@@ -88,6 +88,7 @@ func testGetTaskList() {
 	request.Region = "cn-bj2"
 	request.PublicKey = PUBLIC_KEY
 	request.PrivateKey = PRIVATE_KEY
+	request.Date = "2016-11-11"
 
 	rsp, err := ugcapi.GetTaskList(request)
 	if err != nil {

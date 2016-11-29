@@ -75,8 +75,9 @@ struct get_task_list_request{
 	string  orderby;      //option 排序
 	int     limit;        //option  默认为20
 	int     offset;       //option  默认为0
-	string public_key;  //required  用户的 公钥
-	string private_key;  //required  用户的 私钥
+	string public_key;    //required  用户的 公钥
+	string private_key;   //required  用户的 私钥
+	string date;		  //required 日期 格式:2016-11-11
 };
 
 int get_task_list(get_task_list_request &param

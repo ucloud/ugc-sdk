@@ -141,6 +141,7 @@ type GetTaskListRequest struct {
 	Offset     int    //option  默认为0
 	PublicKey  string //required  用户的 公钥
 	PrivateKey string //required  用户的 私钥
+	Date       string //required 日期 格式: 2016-11-11
 }
 
 // 获取提交的任务列表
@@ -180,6 +181,7 @@ func GetTaskList(request GetTaskListRequest) (rsp string, err error) {
 
 	signature := Vefsig(request.PrivateKey, paramMap)
 	paramMap["Signature"] = signature
+	paramMap["Date"] = request.Date
 	url := GenerateUrl(COMMON_API_URL, paramMap)
 
 	return HttpGet(url)

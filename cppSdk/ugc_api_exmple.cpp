@@ -87,6 +87,7 @@ void test_get_task_list()
 	param.region = "cn-bj2";
 	param.public_key=PUBLIC_KEY;
 	param.private_key=PRIVATE_KEY;
+	param.date="2016-11-11";
 	int ret = get_task_list(param, result);
 	cout << "ret " << ret << endl;
 	cout <<  result << endl;

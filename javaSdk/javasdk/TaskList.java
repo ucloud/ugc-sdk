@@ -21,6 +21,7 @@ public class TaskList {
 	public int     offset;       //option  默认为0
 	public String public_key;  //required  用户的 公钥
 	public String private_key;  //required  用户的 私钥
+	public String date;          //required 日期 格式:2016-11-11
 
 
 
@@ -78,6 +79,7 @@ public class TaskList {
 		String signature = ApiUrl.vefsig(this.private_key, this_map);
 	
 		this_map.put("Signature", signature);
+		this_map.put("Date", this.date);
 
 		String url = ApiUrl.generateRequestUrl(ApiUrl.COMMON_API_URL, this_map);
 

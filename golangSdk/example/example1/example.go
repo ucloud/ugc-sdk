@@ -3,8 +3,8 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"golang_sdk/golandSdk"
 	"time"
+	"ugc-sdk/golangSdk/golandSdk"
 )
 
 var PUBLIC_KEY string = ""

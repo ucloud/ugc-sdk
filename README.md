@@ -1,6 +1,6 @@
 # Sdk for UCloud UGC
 
-##Avaliable sdks:
+## Avaliable sdks:
 - python sdk
 - cpp sdk
 - java sdk

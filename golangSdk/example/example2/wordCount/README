@@ -1,8 +1,0 @@
-#wordCount是一个简单的单词统计程序，用户可以将其打包成docker镜像，自行运行。
-#编译程序
-sh build.sh
-＃本机运行(注意控制台输入的最后一个单词需要空格)
-./wordCount
-#打包成Docker镜像，详细步奏见教程https://doc.ucloud.cn/compute/ugc/sdk/golangsdk1
-
-
